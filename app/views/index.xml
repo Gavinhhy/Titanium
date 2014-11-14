@@ -1,0 +1,10 @@
+<Alloy>
+	<Model src="json_model" instance="true" id="my_json_result"/>
+	<Window class="container">
+		<View id="main" layout='vertical'>
+			<TextField id="input" hintText="请输入..."></TextField>
+			<Button id="submit" onClick="request">提交</Button>
+			<Label id="show" value="{json_model.result_value}"> </Label>
+		</View>
+	</Window>
+</Alloy>
