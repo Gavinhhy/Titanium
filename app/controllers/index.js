@@ -1,6 +1,8 @@
-var url = "http://siwei.me:3855/interface/sprites/say_hi?name=dashi";
-var json;
 function request(e) {
+
+	var json;
+	var name = $.input.value;
+	var url = "http://siwei.me:3855/interface/sprites/say_hi?name=" + name;
 
 	var client = Ti.Network.createHTTPClient({
 		onload : function(e) {
@@ -10,11 +12,8 @@ function request(e) {
 			Ti.API.info("===" + json);
 			Ti.API.info("=== comment: " + json.comment);
 			Ti.API.info("=== result: " + json.result);
-			alert(json.result);
-			var temp = $.my_json_result;
-			//var temp = Alloy.Models.json_model;
-			temp.set('result_value', ' XXXX');
-//			$.index.open();
+			$.show.setText(json.result);
+			Ti.API.info(name);
 		},
 		timeout : 5000
 	});

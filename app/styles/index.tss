@@ -17,14 +17,18 @@
 "#input":{
 	center:"ture",
 	width:"50%",
+	color:"black",
 	font: {
-		fontSize: 20
-	}
+		fontSize: 20,
+		
+	},
+	
 }
 "#submit":{
 	top:"2%",
 	center:"ture",
 	width:"50%",
+	color:"#66ffff",
 	font: {
 		fontSize: 20
 	}
@@ -35,6 +39,6 @@
 	width:"50%",
 	font: {
 		fontSize: 20
-	}
 }
 
+}

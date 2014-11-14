@@ -1,10 +1,11 @@
 <Alloy>
-	<Model src="json_model" instance="true" id="my_json_result"/>
+	<!--<Model src="json_model" instance="true" id="my_json_result"/>-->
+	<Collection src="json_model"/>
 	<Window class="container">
 		<View id="main" layout='vertical'>
 			<TextField id="input" hintText="请输入..."></TextField>
 			<Button id="submit" onClick="request">提交</Button>
-			<Label id="show" value="{json_model.result_value}"> </Label>
-		</View>
-	</Window>
+			<Label id="show" >---XXXXXXXXXX---</Label>
+	</View>
+</Window>
 </Alloy>
